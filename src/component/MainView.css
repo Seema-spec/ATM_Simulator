@@ -1,0 +1,234 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    background: black;
+    width: 100%;
+    min-height: 120vh; 
+    background-image: url("../../public/img/black-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.medium-box{
+    width: 90%;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.header img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width: 500px) {
+    .header img {
+        top: 13px;
+        width: calc(1.5rem + 4vw);
+        height: calc(1.5rem + 4vw);
+    }
+}
+
+.header p {
+    color: white;
+    margin: 18px 63px 9px 0;
+    font-size: calc(1rem + 0vw);
+}
+
+@media screen and (max-width: 1000px) {
+    .header p {
+        margin: 15px 63px 0 0;
+        font-size: calc(0.7rem + 0vw);
+    }
+}
+
+
+.heading {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.heading h2 {
+    color: white;
+    margin: 18px 0px 0px;
+    font-size: calc(0.8rem + 0vw);
+}
+
+.heading p {
+    color: white;
+    margin: 5px 0px;
+    font-size: calc(0.5rem + 0.5vw);
+}
+
+
+.inner-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    border-radius: 15px;
+    margin-top: 50px;
+    display: flex;
+}
+
+@media screen and (max-width: 400px) {
+    .inner-container  {
+        flex-direction: column;
+    }
+}
+
+.left-container {
+    position: relative;
+    border-radius: 15px 0px 0px 15px;
+    width: 40%;
+}
+@media screen and (max-width: 400px) {
+    .left-container {
+        width: 100%;
+    }
+}
+
+.left-container img {
+    width: 50%;
+    height: auto;
+    border-radius: 15px 0px 0px 15px;
+}
+
+
+.transaction-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+.transaction-title {
+    color: white;
+    font-size: calc(0.5rem + 0.9vw) !important;
+    font-weight: 500 !important;
+}
+
+.transaction-card {
+    background-color: rgb(7, 136, 249) !important;
+    padding: 0 !important;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-container {
+    position: relative;
+    width: 61%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 400px) {
+    .right-container {
+        width: 100%;
+    }
+}
+
+.customCard {
+    background-color: #3b3b3b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid#4b4b4b;
+    width: 100%;
+    padding:15px;
+}
+
+.css-46bh2p-MuiCardContent-root:last-child {
+    padding: 10px !important;
+}
+
+.css-1ksz3mq {
+    height: 100% !important;
+}
+
+.css-bhp9pd-MuiPaper-root-MuiCard-root {
+    border-radius: 0px !important;
+}
+
+.card-input{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #3b3b3b;
+    color: white;
+    margin: 20px;
+    border: none;
+    font-size: medium;
+    width: 220px;
+}
+.card-button{
+    padding: 20px;
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    border: none;
+    width: 144px;
+}
+.card-button-back{
+    padding: 20px;
+    background-color: #dcdcff;
+    border-radius: 10px;
+    color: blue;
+    outline: none;
+    border: 1px solid blue;
+    width: 144px;
+}
+.inner-card-notes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inner-card-notes select{
+    background-color: #3b3b3b;
+    border-radius: 10px;
+    background-color: #3b3b3b;
+    color: white;
+    margin: 20px;
+    border: none;
+    font-size: medium;
+    width: 244px;
+    padding: 20px;
+}
+.inner-card-notes label{
+    color: white;
+    font-size: calc(0.6rem + 0.5vw);
+    font-family: sans-serif;
+}
+.button-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    flex-wrap: wrap;
+}
+.button-class button{
+    margin: 10px;
+}
